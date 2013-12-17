@@ -1,9 +1,12 @@
 __author__ = 'jezinka'
 
-fib = [1, 1]
 
-while(fib[-2] + fib[-1] < 4000000):
-    fib.append(fib[-2] + fib[-1])
+def ex2(fib_array, limit):
+    while fib_array[-2] + fib_array[-1] < limit:
+        fib_array.append(fib_array[-2] + fib_array[-1])
 
-print sum([f for f in fib if f % 2 == 0])
+    return sum([f for f in fib_array if f % 2 == 0])
 
+assert ex2([1, 1], 100) == sum([2, 8, 34])
+
+print ex2([1,1], 4000000)
