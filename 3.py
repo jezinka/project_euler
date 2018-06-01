@@ -21,7 +21,6 @@ def split_ahead(number, i):
 
 
 def ex3(number):
-
     i = 1
 
     while number != 1:
@@ -30,6 +29,7 @@ def ex3(number):
 
     return i
 
+
 assert get_next_prime(0) == 1
 assert get_next_prime(1) == 2
 assert get_next_prime(3) == 5
@@ -37,5 +37,4 @@ assert get_next_prime(8) == 11
 
 assert ex3(13195) == 29
 
-print ex3(600851475143)
-
+print(ex3(600851475143))
