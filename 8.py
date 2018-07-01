@@ -10,7 +10,7 @@ def find_max_product(k):
 
     i = k
     window_product = max_product
-    while i <= len(large_number_array) and i + k <= len(large_number_array):
+    while i + k <= len(large_number_array):
         next_item = large_number_array[i]
         previous_item = large_number_array[i - k]
         if next_item is not 0:
